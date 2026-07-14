@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 30px;
+}
+
+
+h1 {
+    font-size: 32px;
+}
+
+
+#info {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+#board {
+
+    width: min(80vw, 640px);
+    aspect-ratio: 1 / 1;
+
+    margin: 20px auto;
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+
+    gap: 3px;
+
+}
+
+
+.tile {
+
+    background-image: url("assets/puzzle.jpg");
+    background-size: 800% 800%;
+
+    cursor: pointer;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+    transition: transform 0.2s ease;
+
+}
+
+
+.tile:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+.selected {
+
+    outline: 4px solid #007bff;
+
+}
+
+
+button {
+
+    padding: 12px 25px;
+
+    font-size: 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+}
